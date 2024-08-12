@@ -1,0 +1,96 @@
+body{
+    background-image:url("background.png");
+    width:99%;
+    height:74vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+}
+.stopwatch{
+    width:90%;
+    height:95%;
+    position:relative;
+    top:-20%;
+    max-width: 550px;
+    background-color: rgba(113, 100, 100, 0.345);
+    background-size: cover;
+    text-align: center;
+    padding: 40px 0;
+    color:whitesmoke;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgba(255,255,255,0.2);
+}
+.stopwatch h1{
+    margin-top:60px;
+    font-size: 64px;
+    font-weight:300;
+}
+.buttons{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lapscl,img,button{
+    width:80px;
+    height:80px;
+    cursor:pointer;
+    border-radius: 50%;
+    color:white;
+    background-color: transparent;
+    border-color: 2px grey;
+    font-weight:bolder;
+}
+button:hover,img:hover{
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px 5px whitesmoke;
+}
+.lap{
+    width:400px;
+    height:200px;
+    overflow:auto;
+    list-style: none;
+    color:white;
+    position:relative;
+    top: -2%;
+    left:15%;
+    padding:30px 0px;
+    font-size: 30px;
+}
+.lap::-webkit-scrollbar{
+    display:none;
+}
+li{
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    padding:5px 2px;
+}
+@media(max-width:550px){
+    .stopwatch{
+        width:90%;
+        height:90%;
+        top:-25%;
+        left:-1.5%;
+    }
+    .stopwatch h1{
+        margin-top:60px;
+        font-size: 40px;
+        font-weight:300;
+    }
+    
+.lapscl,img,button{
+    width:50px;
+    height:50px;
+    font-size:10px;
+}
+.lap{
+    width:50%;
+    height:200px;
+    top: -5%;
+    left:25%;
+    font-size: 20px;
+}
+}

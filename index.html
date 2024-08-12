@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP-WATCH</title>
+    <link rel="icon" href="icon.jpeg"> 
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <h1 class="displayTime">00:00:00:00</h1>
+        <div class="buttons">
+            <img id="stop" src="stop.png" onclick="pause()">
+            <img id="start" src="start.png" onclick="start()">
+            <img id="reset" src="reset.png" onclick="reset()">
+            <button class="lapscl" id="laps" onclick="lap()">LAPS</button>
+            <button id="lapclearbtn" onclick="clearLap()">CLEAR ALL LAPS</button>
+        </div><br>
+        <ul class="lap">
+        </ul>
+    </div>
+    <script src="indexscript.js"></script>
+</body>
+</html>
